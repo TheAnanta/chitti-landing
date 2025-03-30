@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Atlassian Sans";
+  src: url("/fonts/AtlassianSans-latin.ttf") format("truetype");
+}
+* {
+  font-family: "Nexa-Trial", sans-serif;
+  --primary-color: #f26e0c;
+}
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #282828;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  align-items: center;
+  padding: 8px 0px;
+}
+nav .chitti-logo {
+  font-weight: 800;
+  margin-left: 16px;
+  color: var(--primary-color);
+}
+nav ul {
+  display: flex;
+  column-gap: 16px;
+  font-size: 14px;
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 24px;
+}
+
+nav ul li {
+  padding: 4px 8px;
+}
+
+nav ul li.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.nexa-regular {
+  font-family: "NexaRegular", sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  color: #20242560;
+}
+
+.hero-section,
+.benefits-section {
+  display: flex;
+}
+
+.hero-section img {
+  width: 50vw;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  align-items: start;
+  object-position: top;
+}
+
+.benefits-section img {
+  width: 55vw;
+  aspect-ratio: 1.8;
+  flex-shrink: 0;
+  object-fit: cover;
+  align-items: start;
+  object-position: top;
+}
+
+table,
+th,
+td {
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+
+table {
+  background: #9fe7f5;
+  -moz-border-radius: 16px;
+  -o-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  border-collapse: separate;
+}
+th,
+td {
+  padding: 4px 12px;
+}
+th {
+  background: #429ebd;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
