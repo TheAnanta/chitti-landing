@@ -10,7 +10,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-p, td, li{
+p, td, li, strong, address{
   font-family: 'NexaRegular', sans-serif;
 }
 nav {
@@ -203,7 +203,7 @@ a {
   color: black;
 }
 
-.emphasis-1 {
+.emphasis-1, strong {
   font-weight: 700;
   color: #f26e0c;
 }
@@ -248,3 +248,46 @@ a {
   }
 }
 
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #004080;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+p, ul, address {
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.updated-date {
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
+
+address {
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid #004080;
+  font-style: normal;
+}
