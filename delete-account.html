@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Your Account</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Delete Your Account</h1>
+      <p>
+        If you wish to delete your account and associated data, please follow
+        the steps below:
+      </p>
+
+      <h2>Steps to Request Account Deletion:</h2>
+      <ol>
+        <li>Enter your registered GITAM roll number below.</li>
+        <li>Click on "Request Deletion" to submit your request.</li>
+        <li>
+          You will receive a confirmation GITAM roll number to verify your
+          request.
+        </li>
+        <li>
+          Once confirmed, your account and associated data will be permanently
+          deleted within 7 days.
+        </li>
+      </ol>
+
+      <form onsubmit="handleDeleteFormSubmit(event)" method="POST">
+        <label for="gitam-roll-number">Registered GITAM roll number:</label>
+        <input
+          type="text"
+          id="gitam-roll-number"
+          name="gitam-roll-number"
+          required
+        />
+        <button type="submit">Request Deletion</button>
+      </form>
+
+      <h2>Data Retention Policy:</h2>
+      <p>Upon account deletion, the following data will be removed:</p>
+      <ul>
+        <li>Personal profile information</li>
+        <li>Usage history and preferences</li>
+        <li>Stored messages and interactions</li>
+      </ul>
+      <p>
+        Some data may be retained for legal and security purposes for up to 30
+        days.
+      </p>
+
+      <p>
+        If you need further assistance, please contact us at
+        <a
+          style="font-family: NexaRegular"
+          href="mailto:support@scorewithchitti.in"
+          >support@scorewithchitti.in</a
+        >.
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
