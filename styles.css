@@ -51,7 +51,7 @@ nav ul li.active {
   font-weight: 400;
 }
 
-footer {
+/* footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -61,6 +61,84 @@ footer {
   font-weight: 500;
   background-color: #f5f5f5;
   color: #20242560;
+} */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #20242560;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 16px;
+}
+
+.footer-logo {
+  height: 80px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  height: 45px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.footer-text {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-text {
+    margin-top: 0;
+  }
+
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 .hero-section {
@@ -82,7 +160,7 @@ footer {
 }
 
 .benefits-section img {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 1.8;
   flex-shrink: 0;
   object-fit: cover;
@@ -90,34 +168,8 @@ footer {
   object-position: top;
 }
 
-
-@media screen and (min-width: 768px) {
-  nav {
-    flex-direction: row;
-  }
-
-  .hero-section, .benefits-section {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .hero-section img {
-    width: 50vw;
-    aspect-ratio: 1.5;
-    object-fit: cover;
-    align-items: start;
-    object-position: top;
-  }
-  .benefits-section img {
-    width: 55vw;
-    aspect-ratio: 1.8;
-    flex-shrink: 0;
-    object-fit: cover;
-    align-items: start;
-    object-position: top;
-  }
-  
+.benefits-section li{
+  line-height: 1.8;
 }
 
 table,
@@ -148,4 +200,49 @@ th {
 a {
   text-decoration: none;
   color: black;
+}
+
+.emphasis-1 {
+  font-weight: 700;
+  color: #f26e0c;
+}
+
+.responsive-grid{
+  display: grid; 
+  grid-template: auto / repeat(1, auto); 
+  gap: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .hero-section, .benefits-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-section img {
+    width: 50vw;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    align-items: start;
+    object-position: top;
+  }
+  .benefits-section img {
+    width: 55vw;
+    aspect-ratio: 1.8;
+    flex-shrink: 0;
+    object-fit: cover;
+    align-items: start;
+    object-position: top;
+  }
+  
+  .responsive-grid{
+    grid-template: auto / repeat(3, auto); 
+  }
 }
