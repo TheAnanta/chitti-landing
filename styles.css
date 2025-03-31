@@ -10,17 +10,20 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+p, td, li{
+  font-family: 'NexaRegular', sans-serif;
+}
 nav {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  box-shadow: 0 0 20px #282828;
-  position: sticky;
   top: 0;
   overflow: hidden;
   align-items: center;
   padding: 8px 0px;
+  flex-direction: column;
 }
+
 nav .chitti-logo {
   font-weight: 800;
   margin-left: 16px;
@@ -60,13 +63,18 @@ footer {
   color: #20242560;
 }
 
-.hero-section,
-.benefits-section {
+.hero-section {
   display: flex;
+  flex-direction: column;
+}
+
+.benefits-section{
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .hero-section img {
-  width: 50vw;
+  width: 100vw;
   aspect-ratio: 1.5;
   object-fit: cover;
   align-items: start;
@@ -74,12 +82,42 @@ footer {
 }
 
 .benefits-section img {
-  width: 55vw;
+  width: 100vw;
   aspect-ratio: 1.8;
   flex-shrink: 0;
   object-fit: cover;
   align-items: start;
   object-position: top;
+}
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .hero-section, .benefits-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-section img {
+    width: 50vw;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    align-items: start;
+    object-position: top;
+  }
+  .benefits-section img {
+    width: 55vw;
+    aspect-ratio: 1.8;
+    flex-shrink: 0;
+    object-fit: cover;
+    align-items: start;
+    object-position: top;
+  }
+  
 }
 
 table,
