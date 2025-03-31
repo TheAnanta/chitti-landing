@@ -187,6 +187,7 @@ table {
   -webkit-border-radius: 16px;
   border-radius: 16px;
   border-collapse: separate;
+  font-size: 12px;
 }
 th,
 td {
@@ -246,3 +247,4 @@ a {
     grid-template: auto / repeat(3, auto); 
   }
 }
+
