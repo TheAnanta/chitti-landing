@@ -342,3 +342,35 @@ table{
   border-left: 4px solid #004080;
   font-style: normal;
 }
+
+
+.hero-section a{
+  padding: 12px 42px;
+  border: 1px solid #000;
+  border-radius: 48px;
+  display: inline-flex;
+  width: max-content;
+  font-size: 12.6px;
+  font-weight: 700;
+}
+.hero-section a span{
+  font-size: 20.6px;
+  margin-left: 8px;
+}
+
+.hero-section .explore-community{
+  padding: 12px 36px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: white;
+  border-radius: 48px;
+  margin-right: 8px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
