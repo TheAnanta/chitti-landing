@@ -2,8 +2,12 @@
   font-family: "Atlassian Sans";
   src: url("/fonts/AtlassianSans-latin.ttf") format("truetype");
 }
+@font-face {
+  font-family: "NexaRegular";
+  src: url("/fonts/nexa-regular.ttf") format("truetype");
+}
 * {
-  font-family: "Nexa-Trial", sans-serif;
+  font-family: "NexaRegular", sans-serif;
   --primary-color: #f26e0c;
 }
 body {
@@ -78,7 +82,8 @@ nav ul li.active {
 }
 
 .footer-logo {
-  height: 80px;
+  height: 30px;
+  margin-bottom: 10%;
 }
 
 .footer-social {
