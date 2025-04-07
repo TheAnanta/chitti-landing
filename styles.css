@@ -344,7 +344,7 @@ table{
 }
 
 
-.hero-section a{
+/* .hero-section a{
   padding: 12px 42px;
   border: 1px solid #000;
   border-radius: 48px;
@@ -365,7 +365,7 @@ table{
   color: white;
   border-radius: 48px;
   margin-right: 8px;
-}
+} */
 
 .material-symbols-outlined {
   font-variation-settings:
