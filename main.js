@@ -17,3 +17,23 @@ function handleDeleteFormSubmit(event) {
     alert("An email has been sent to delete the item.");
   }
 }
+
+function addUserToPlayConsole() {
+  const userEmail = prompt("Enter a email address to add to the Play Console.");
+
+  fetch(
+    "https://asia-south1-chitti-ananta.cloudfunctions.net/webApi/add-to-play-console",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: userEmail,
+      }),
+    }
+  )
+    .then((response) => response.text())
+    .then((result) => alert(`Download from play store with ${userEmail}.`))
+    .catch((error) => console.error(error));
+}
