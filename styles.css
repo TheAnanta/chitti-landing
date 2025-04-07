@@ -379,3 +379,29 @@ table{
   'GRAD' 0,
   'opsz' 24
 }
+
+.download-platform{
+  aspect-ratio: 1;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.download-platform img{
+  width: 50px;
+  height: max-content;
+  object-fit: contain;
+}
+
+.download-platform a{
+  text-align: center;
+}
+
+.download-platform p{
+  margin: 0px;
+}

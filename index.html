@@ -33,13 +33,54 @@
             Organized study resources, exam roadmaps, and expert guidance to
             simplify stress-free exam prep and guidance.
           </p>
-          <button onclick="addUserToPlayConsole()">
-            <img
-              src="assets/images/play_store.png"
-              style="min-height: 100px; width: 200px; object-fit: contain"
-              alt="Play Store"
-            />
-          </button>
+          <div style="display: flex; gap: 20px">
+            <div class="download-platform">
+              <a
+                href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.0/chitti.apk"
+                target="_blank"
+              >
+                <img
+                  src="https://developer.android.com/static/images/brand/android-head_3D.svg"
+                  alt="Play Store"
+                />
+                <p>Android</p>
+              </a>
+            </div>
+            <div class="download-platform">
+              <a
+                href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.0/chitti.zip"
+                target="_blank"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                  alt="macOS"
+                />
+                <p>macOS</p>
+              </a>
+            </div>
+            <div class="download-platform">
+              <a>
+                <img
+                  src="https://images.seeklogo.com/logo-png/26/1/windows-10-icon-logo-png_seeklogo-267364.png"
+                  alt="Windows"
+                />
+                <p>Windows</p>
+              </a>
+            </div>
+            <div
+              class="download-platform"
+              style="opacity: 30%"
+              onclick="() => alert('Coming soon!')"
+            >
+              <a>
+                <img
+                  src="https://img.icons8.com/?size=512&id=20821&format=png"
+                  alt="iOS"
+                />
+                <p>iOS</p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -71,16 +112,6 @@
               the course inside and out.
             </li>
           </ul>
-          <a
-            href="https://appdistribution.firebase.dev/i/4548a770ffe77efb"
-            target="_blank"
-          >
-            <img
-              src="assets/images/play_store.png"
-              style="min-height: 100px; width: 200px; object-fit: contain"
-              alt="Play Store"
-            />
-          </a>
         </div>
         <img
           src="https://www.shutterstock.com/image-photo/worried-thinking-around-hipster-american-600nw-2502276161.jpg"
@@ -223,35 +254,51 @@
       </section>
       <section style="margin: 28px">
         <h2>Start preparation on</h2>
-        <button onclick="addUserToPlayConsole()">
-          <img
-            src="assets/images/play_store.png"
-            style="min-height: 100px; width: 200px; object-fit: contain"
-            alt="Play Store"
-          /></button
-        > 
+        <div style="display: flex; gap: 20px">
+          <div class="download-platform">
+            <a
+              href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.0/chitti.apk"
+              target="_blank"
+            >
+              <img
+                src="https://developer.android.com/static/images/brand/android-head_3D.svg"
+                alt="Play Store"
+              />
+              <p>Android</p>
+            </a>
+          </div>
+          <div class="download-platform">
+            <a
+              href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.0/chitti.zip"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                alt="macOS"
+              />
+              <p>macOS</p>
+            </a>
+          </div>
+          <div class="download-platform">
+            <a>
+              <img
+                src="https://images.seeklogo.com/logo-png/26/1/windows-10-icon-logo-png_seeklogo-267364.png"
+                alt="Windows"
+              />
+              <p>Windows</p>
+            </a>
+          </div>
+        </div>
         <h2>Coming soon on...</h2>
-        <button style="margin-right: 12px">
-          <img
-            src="assets/images/ios_app_store.svg"
-            style="min-height: 60px; min-width: 200px; object-fit: contain"
-            alt="App Store"
-          />
-        </button>
-        <a style="margin-right: 12px">
-          <img
-            src="assets/images/mac_app_store.svg"
-            style="min-height: 66px; min-width: 200px; object-fit: contain"
-            alt="App Store"
-          />
-        </a>
-        <a style="margin-right: 12px">
-          <img
-            src="assets/images/microsoft_store.png"
-            style="min-height: 64px; width: 230px; object-fit: contain"
-            alt="App Store"
-          />
-        </a>
+        <div class="download-platform" onclick="() => alert('Coming soon!')">
+          <a>
+            <img
+              src="https://img.icons8.com/?size=512&id=20821&format=png"
+              alt="iOS"
+            />
+            <p>iOS</p>
+          </a>
+        </div>
       </section>
     </main>
     <footer class="footer">
