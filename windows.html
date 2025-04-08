@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Download & Install App for macOS</title>
+    <title>Download & Install App for windows</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -43,56 +43,61 @@
         margin-top: 1rem;
         border-radius: 8px;
       }
-
-      a.download-link {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.75rem 1.5rem;
-        background-color: #007aff;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: 500;
-      }
-
-      a.download-link:hover {
-        background-color: #005bb5;
-      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Thank you for downloading our macOS App!</h1>
+      <h1>Thank you for downloading our windows App!</h1>
       <p>
         Your download should begin automatically. If it doesn't,
         <a
-          class="download-link"
-          href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.1/chitti-macos.zip"
+          href="https://github.com/TheAnanta/chitti-app/releases/download/1.0.1/chitti.exe"
           >click here</a
         >.
       </p>
 
       <h2>How to install:</h2>
       <ol>
-        <li>Download the <strong>ZIP</strong> file and extract it.</li>
         <li>
-          Drag and drop the extracted <strong>App</strong> into your
-          <strong>Applications</strong> folder.
+          Once the download is complete, open your Downloads folder (usually
+          found in your File Explorer).
         </li>
-        <li>Open the App from Applications.</li>
+        <li>
+          You should see a file named <strong>"chitti.exe"</strong> in your
+          Downloads folder.
+        </li>
+        <li>
+          Double-click the <strong>"chitti.exe"</strong> file to begin the
+          installation process.
+        </li>
       </ol>
 
       <div class="note">
-        <strong>Note:</strong> On first launch, macOS may prevent the app from
-        opening since it’s from an unidentified developer. To allow it:
+        <strong>Note:</strong>
+        On first launch, windows may prevent the app from opening since it’s
+        from an unidentified developer. <strong>This is normal!</strong>
+        <br /><br />
+        To allow it:
         <ol>
+          <li>To proceed, click <strong>"More info"</strong>.</li>
           <li>
-            Go to <strong>System Settings</strong> &gt;
-            <strong>Privacy & Security</strong>.
+            A new button labeled <strong>"Run anyway"</strong> will appear.
+            Click "<strong>Run anyway"</strong>to coninue the installation.
           </li>
-          <li>Scroll down to find the message about the blocked app.</li>
-          <li>Click <strong>"Open Anyway"</strong> and confirm.</li>
-          <li>Then try opening the app again.</li>
+          <li>
+            Follow the on-screen prompts to complete the installation process.
+          </li>
+
+          <li>
+            Typically, this involves clicking "Next," accepting license
+            agreements, and confirming installation settings.
+          </li>
+
+          <li>
+            Once the installation is complete, you should find a
+            <strong>CHITTI</strong> shortcut on your desktop or in your Start
+            Menu.
+          </li>
         </ol>
       </div>
     </div>
@@ -100,7 +105,7 @@
     <script>
       window.onload = function () {
         const downloadUrl =
-          "https://github.com/TheAnanta/chitti-app/releases/download/1.0.1/chitti-macos.zip";
+          "https://github.com/TheAnanta/chitti-app/releases/download/1.0.1/chitti.exe";
         const a = document.createElement("a");
         a.href = downloadUrl;
         a.download = "";
