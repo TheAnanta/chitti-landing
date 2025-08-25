@@ -1,6 +1,6 @@
 console.log("Document loaded");
 // Change the countdown timer every 1 second
-var countdownDate = new Date("Aug 26, 2025 17:00:00").getTime();
+var countdownDate = new Date("Aug 26, 2025 18:00:00").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countdownDate - now;
